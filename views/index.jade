@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p Data Loading Test
+  br
+  br
+  p
+    | Loading Time at Server:
+    span#loadTimeServer
+  br
+  p
+    | Transferring Time from Server to Client:
+    span#loadTimeClient
+  br
+  br
+  p
+    span#roadNum
+    |  Road Names are:
+  br
+  p
+    span#roadName
+  script(src='/javascripts/webMain.js')
